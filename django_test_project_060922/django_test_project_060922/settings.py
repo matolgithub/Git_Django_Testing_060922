@@ -110,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Moscow'
 
 USE_I18N = True
 
@@ -126,3 +126,9 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CONTACT_EMAIL = '8888888@mail.ru'
+
+CONTACT_ADDRESS = 'Russia, Moscow, Vernadscogo str., 120'
+
+CONTACT_PHONE = '+7(495)555-66-77'
