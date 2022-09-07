@@ -35,3 +35,22 @@ def list_page(request):
         '3': 'tgrg',
     }
     return render(request, template_name='list_page.html', context=context)
+
+
+def writer_article(request):
+    writers = ['Oleg', 'Ivan', 'Igor']
+    dict_articles = {
+        'Oleg': ['Gfjfj fkfkfkfk fkfkfkf.', 'Kfdhfh fhfhfh vnvnn.', 'Thvhvh nhn rhhr ewkwkk.', 'Hydydu lflf bbknknk.'],
+        'Ivan': ['Ujjkfjfj fkfkfkfk fkfkfkf.', 'Lhfh fhfhfh vnvnn.', 'RESvhvh nhn rhhr ewkwkk.'],
+        'Igor': ['Kfdhfh fhfhfh vnvnn.', 'MJKKvh nhn rhhr ewkwkk.'],
+    }
+    # for writer in writers:
+    #     for author, articles in dict_articles.items():
+    #         if writer == author:
+    #             for article in articles:
+    #                 context = {
+    #                     writer: article
+    #                 }
+    context = dict_articles
+
+    render(request, 'articles.html', context=context)
